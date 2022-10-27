@@ -119,13 +119,7 @@ $results = $stmt->fetchAll();
         echo $row['date'].'<br>';
     echo "<hr>";}
     }
-    
-    
-    
-    
-    
-    
-    
+   
     elseif(empty($_POST["name"]) && empty($_POST["str"])){
         //何もデータがない時→表示させるだけ
     $sql = 'SELECT * FROM mission5';
