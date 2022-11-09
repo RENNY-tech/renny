@@ -15,7 +15,7 @@ $dsn = 'mysql:dbname="データベース名";host=localhost';
     $stmt = $pdo->query($sql);
 
     
-    if($_POST["name"] && $_POST["str"] && empty($_POST["hidden_num"]) && $_POST["password"]){
+    if(!empty($_POST["name"]) && !empty($_POST["str"]) && empty($_POST["hidden_num"]) && $_POST["password"]){
         //データが飛んできた時
     $sql = $pdo -> prepare("INSERT INTO mission5 (name, comment, date, password) VALUES (:name, :comment, :date, :password)");
     $sql -> bindParam(':name', $name, PDO::PARAM_STR);
@@ -94,7 +94,7 @@ $results = $stmt->fetchAll();
         echo $row['date'].'<br>';
     echo "<hr>";}}
     
-    }elseif($_POST["hidden_num"] && $_POST["name"] && $_POST["str"]){
+    }elseif(!empty($_POST["hidden_num"]) && $_POST["name"] && $_POST["str"]){
      $id = $_POST["hidden_num"]; //変更する投稿番号
     $name = $_POST["name"];
     $comment = $_POST["str"];
@@ -119,7 +119,13 @@ $results = $stmt->fetchAll();
         echo $row['date'].'<br>';
     echo "<hr>";}
     }
-   
+    
+    
+    
+    
+    
+    
+    
     elseif(empty($_POST["name"]) && empty($_POST["str"])){
         //何もデータがない時→表示させるだけ
     $sql = 'SELECT * FROM mission5';
