@@ -1,0 +1,74 @@
+h2 {
+font-size: 50px;
+text-align: center ;
+}
+form {
+
+  /*全文字を中央揃えに*/
+  text-align: center ;
+}
+form>p {
+
+}
+
+/*============================
+#category1
+============================*/
+form>p>input#category1 {text-align: center ;
+}
+form>p>label {text-align: center ;
+}
+
+/*============================
+#category2
+============================*/
+form>p>input#category2 {text-align: center ;
+}
+
+/*============================
+#category3
+============================*/
+form>p>input#category3 {text-align: center ;
+}
+form>input {
+width:400px;
+height: 50px;
+text-align: center ;
+}
+form>button {
+text-align: left ;
+}
+
+
+div.container.mt-5 {
+    text-align: center ;
+}
+div.container.mt-5>h3 {
+font-size:35px;
+text-align: center ;
+}
+div.container.mt-5>div.list-unstyled {
+   
+   display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5 {
+	background-color : rgb(255,255,255,0.75);
+    padding: 30px;
+    text-align: center ;
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5>a {text-align: center ;
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5>a>img.mr-3 {
+text-align: center ;
+padding:5px;
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5>div.media-body {text-align: center ;
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5>div.media-body>h5 {text-align: center ;
+}
+div.container.mt-5>div.list-unstyled>div.media.mt-5>div.media-body>a.far.fa-trash-alt {text-align: center ;
+}
+
